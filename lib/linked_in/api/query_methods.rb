@@ -44,10 +44,10 @@ module LinkedIn
       end
    
       def posts_for_group(group_id, options={})
-        path = "/group/#{group_id}/posts"
+        path = "/groups/#{group_id}/posts"
         simple_query(path, options)
       end
-      
+
       private
 
         def simple_query(path, options={})
